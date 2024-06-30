@@ -1,0 +1,16 @@
+<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="interface-arrows-right-circle-1--arrow-keyboard-circle-button-right" clip-path="url(#clip0_1_909)">
+<g id="Group">
+<g id="Group 8082">
+<path id="Vector" d="M8.36426 16.1621L15.6374 8.88901" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M12.001 8.88916H15.6375V12.5257" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<path id="Vector_3" d="M12.0003 23.6685C18.1543 23.6685 23.1431 18.6797 23.1431 12.5257C23.1431 6.37164 18.1543 1.38281 12.0003 1.38281C5.84625 1.38281 0.857422 6.37164 0.857422 12.5257C0.857422 18.6797 5.84625 23.6685 12.0003 23.6685Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_1_909">
+<rect width="24" height="24" fill="white" transform="translate(0 0.525635)"/>
+</clipPath>
+</defs>
+</svg>

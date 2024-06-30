@@ -1,0 +1,13 @@
+<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="travel-map-location-pin--navigation-map-maps-pin-gps-location" clip-path="url(#clip0_1_2024)">
+<g id="Group">
+<path id="Vector" d="M20.6805 9.36761C20.6805 13.6362 12.9662 23.939 12.9662 23.939C12.9662 23.939 5.25195 13.6362 5.25195 9.36761C5.25195 7.32165 6.06471 5.35949 7.51141 3.91278C8.95812 2.46607 10.9203 1.65332 12.9662 1.65332C15.0122 1.65332 16.9744 2.46607 18.4211 3.91278C19.8678 5.35949 20.6805 7.32165 20.6805 9.36761V9.36761Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M12.966 11.9388C14.3861 11.9388 15.5374 10.7875 15.5374 9.36733C15.5374 7.94717 14.3861 6.7959 12.966 6.7959C11.5458 6.7959 10.3945 7.94717 10.3945 9.36733C10.3945 10.7875 11.5458 11.9388 12.966 11.9388Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_1_2024">
+<rect width="24" height="24" fill="white" transform="translate(0.96582 0.795898)"/>
+</clipPath>
+</defs>
+</svg>

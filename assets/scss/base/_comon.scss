@@ -1,0 +1,230 @@
+/*
+!Utilities Or Helper CSS
+*/
+
+
+
+
+
+
+ 
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+body {
+  // background-color: $body-bg;
+  font-family: $body-font-family;
+  font-size: $font-size-base;
+}
+html,
+body {
+  overflow-x: hidden;
+  background-color: #FFF;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Inter", sans-serif;
+  color: #333;
+
+}
+p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0;
+}
+h6{
+  font-size: 16px;
+  line-height: 22px;
+  // color: #000000;
+  @media (max-width: 700px) {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+img,
+svg {
+  max-width: 100%;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+a,
+span {
+  display: inline-block;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+:focus {
+  outline: none !important;
+}
+input,
+select,
+textarea {
+  font-weight: 400;
+  font-size: 16px;
+  color: #101010;
+}
+input:focus,
+select:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: 1px solid #184b71 !important;
+}
+
+textarea:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+button {
+  cursor: pointer;
+  border: none !important;
+  background-color: transparent;
+}
+
+button:hover {
+  border: none !important;
+}
+
+*::placeholder {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #707070;
+}
+
+*::-moz-placeholder {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #707070;
+}
+::selection {
+  color: rgb(255, 255, 255);
+  background: #2280c8;
+}
+::-moz-selection {
+  color: rgb(255, 255, 255);
+  background: #2280c8;
+}
+
+// Hide input number type right icon
+
+/*  Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.default_section_gap{
+  margin-top: 80px;
+  
+  @media (max-width: 700px) {
+    margin-top: 60px;
+  }
+}
+
+
+// Carousel
+
+.home_videos_slider {
+
+  position: relative;
+
+  .owl-theme {
+      .custom-nav {
+          position: absolute;
+          top: 20%;
+          left: 0;
+          right: 0;
+
+          .owl-prev, .owl-next {
+              position: absolute;
+              height: 100px;
+              color: inherit;
+              background: none;
+              border: none;
+              z-index: 100;
+
+              i {
+                  font-size: 2.5rem;
+                  color: #cecece;
+              }
+          }
+
+          .owl-prev {
+              left: -55px;
+          }
+
+          .owl-next {
+              right: -55px;
+          }
+      }
+  }
+  .owl-theme .owl-nav :hover {
+    background: none !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
