@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/scss/style.css">
+    <link rel="stylesheet" href="assets/plugins/css/magnific-popup.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
     <title>Amass Seed</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/scss/style.css">
 </head>
 
 <body>
@@ -35,7 +37,7 @@
                 <div class="flex justify-between items-center gap-5">
                     <div class="flex items-center">
                         <!-- Become a Vendor Button -->
-                        <button
+                        <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal"
                             class="bg-[#FFF] font-bold text-sm	 text-[#333] w-[160.568px] h-[34.544px] text-center rounded-[8px]">Become
                             a Vendor</button>
                     </div>
@@ -551,40 +553,40 @@
 
             <div class="home_videos_slider mt-10">
                 <div id="videos-view" class="owl-carousel owl-theme">
-                    <div class="item">
-                        <div class="relative">
+                    <div class="item popup_gallery">
+                        <a href="assets/videos/featues_video.mp4" class="video_popup relative">
                             <img class="h-[295px] object-cover" src="assets/images/carosul/category-slider_1.png" alt="">
                             <img style="height: 50px; width:50px;" class="absolute top-[40%] left-1/2 transform -translate-x-1/2 -translate-y-1/2]" 
                              src="assets/images/icons/video_play_home.png" alt="">
-                        </div>
+                        </a>
                         
                         <p class="text-[22px] font-bold pt-3">Organic Vegetables</p>
                         
                     </div>
-                    <div class="item">
-                        <div class="relative">
+                    <div class="item popup_gallery">
+                        <a href="assets/videos/featues_video.mp4" class="video_popup relative">
                             <img class="h-[295px] object-cover" src="assets/images/carosul/category-slider_2.png" alt="">
                             <img style="height: 50px; width:50px;" class="absolute top-[40%] left-1/2 transform -translate-x-1/2 -translate-y-1/2]" 
                              src="assets/images/icons/video_play_home.png" alt="">
-                        </div>
+                        </a>
                         <p class="text-[22px] font-bold pt-3">Seed Collections</p>
 
                     </div>
-                    <div class="item">
-                        <div class="relative">
+                    <div class="item popup_gallery">
+                        <a href="assets/videos/featues_video.mp4" class="video_popup relative">
                             <img class="h-[295px] object-cover" src="assets/images/carosul/category-slider_3.png" alt="">
                             <img style="height: 50px; width:50px;" class="absolute top-[40%] left-1/2 transform -translate-x-1/2 -translate-y-1/2]" 
                              src="assets/images/icons/video_play_home.png" alt="">
-                        </div>
+                        </a>
                         <p class="text-[22px] font-bold pt-3">How to Produce Organic Fruits</p>
 
                     </div>
-                    <div class="item">
-                        <div class="relative">
-                            <img class="h-[295px] object-cover" src="assets/images/carosul/category-slider_1.png" alt="">
+                    <div class="item popup_gallery">
+                        <a href="assets/videos/featues_video.mp4" class="video_popup relative">
+                            <img class="h-[295px] object-cover" src="assets/images/carosul/category-slider_3.png" alt="">
                             <img style="height: 50px; width:50px;" class="absolute top-[40%] left-1/2 transform -translate-x-1/2 -translate-y-1/2]" 
                              src="assets/images/icons/video_play_home.png" alt="">
-                        </div>
+                        </a>
                         <p class="text-[22px] font-bold pt-3">How to Produce Organic Fruits</p>
                     </div>
 
@@ -1054,8 +1056,11 @@
                     <h4 class=" text-xl md:text-2xl font-bold">
                         Get a Newsletter
                     </h4>
-                    <input class="outline-none border-none bg-transparent border-b border-[#D7D7D7] w-full " type="text"
-                        placeholder="Email">
+
+                        <div class="relative z-0 w-full mb-5 group">
+                            <input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-[#D7D7D7] peer" placeholder=" " required />
+                            <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[#333] peer-focus:dark:text-[#D7D7D7] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email</label>
+                        </div>
                     <button class="bg-[#1DAB7E] text-white rounded-[5px] h-[50px] w-[165px]">Subscribe</button>
                     <p class="text-[#333] text-sm md:text-base font-semibold"><span>Terms and Conditions </span> |
                         <span>Terms and Conditions </span>
@@ -1190,12 +1195,97 @@
     </div>
 
 
+    <!-- Vendor Form -->
+    <div id="authentication-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative p-4 w-full max-w-[700px] max-h-full">
+            <!-- Modal content -->
+            <div class="relative py-[15px] px-[25px] bg-white  shadow dark:bg-gray-700">
+                <!-- Modal header -->
+                <div class="flex items-center justify-center p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                    <h3 class="text-3xl font-semibold text-gray-900 dark:text-white">
+                        Become a Vendor
+                    </h3>
+                </div>
+                <!-- Modal body -->
+                <div class="p-4 md:p-5">
+                    <form class="space-y-5" action="#">
+                        <div>
+                            <label for="text" class="block mb-2 text-base font-bold text-gray-900 dark:text-white">Full Name *</label>
+                            <input type="text" name="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-[5px] focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Enter Tour Full Name" required />
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-2 text-base font-bold  dark:text-white">Email Address *</label>
+                            <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-[5px] focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Enter Your Email" required />
+                        </div>
+                        <div>
+                            <label for="phone" class="block mb-2 text-base font-bold  dark:text-white">Phone Number *</label>
+                            <input type="text" name="phone" id="phone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-[5px] focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Enter Your Phone Number" required />
+                        </div>
+                        <!-- Country Dropdown -->
+                        <div>
+                            <label for="countries" class="block mb-2 text-base font-bold dark:text-white">Country</label>
+                            <select id="countries" class="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                <option class="text-[#777] text-sm font-medium" value="" disabled selected>Select Your Country</option>
+                                <option class="text-[#777] text-sm font-medium">United States</option>
+                                <option class="text-[#777] text-sm font-medium">Canada</option>
+                                <option class="text-[#777] text-sm font-medium">France</option>
+                                <option class="text-[#777] text-sm font-medium">Germany</option>
+                            </select>
+                        </div>
+                        <!-- Division Select -->
+                        <div>
+                            <label for="division" class="block mb-2 text-base font-bold dark:text-white">Division</label>
+                            <select id="division" class="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                <option class="text-[#777] text-sm font-medium" value="" disabled selected>Select Your Division</option>
+                                <option class="text-[#777] text-sm font-medium">Dhaka</option>
+                                <option class="text-[#777] text-sm font-medium">Chittagong</option>
+                                <option class="text-[#777] text-sm font-medium">Khulna</option>
+                                <option class="text-[#777] text-sm font-medium">Rajshahi</option>
+                            </select>
+                        </div>
+                        <!-- District Select -->
+                        <div>
+                            <label for="district" class="block mb-2 text-base font-bold dark:text-white">District</label>
+                            <select id="district" class="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                <option class="text-[#777] text-sm font-medium" value="" disabled selected>Select Your District</option>
+                                <option class="text-[#777] text-sm font-medium">Dhaka</option>
+                                <option class="text-[#777] text-sm font-medium">Chittagong</option>
+                                <option class="text-[#777] text-sm font-medium">Khulna</option>
+                                <option class="text-[#777] text-sm font-medium">Rajshahi</option>
+                            </select>
+                        </div>
+
+                        <!-- Area Select -->
+                        <div>
+                            <label for="area" class="block mb-2 text-base font-bold dark:text-white">Area</label>
+                            <select id="area" class="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                <option class="text-[#777] text-sm font-medium" value="" disabled selected>Select Your Area</option>
+                                <option class="text-[#777] text-sm font-medium">Dhaka</option>
+                                <option class="text-[#777] text-sm font-medium">Chittagong</option>
+                                <option class="text-[#777] text-sm font-medium">Khulna</option>
+                                <option class="text-[#777] text-sm font-medium">Rajshahi</option>
+                            </select>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="w-[180px]  text-white bg-[#1DAB7E] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+
 
     <!-- JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/plugins/js/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script src="assets/js/main.js"></script>
+    
     
 </body>
 

@@ -100,7 +100,6 @@ input:focus,
 select:focus {
   outline: none !important;
   box-shadow: none !important;
-  border: 1px solid #184b71 !important;
 }
 
 textarea:focus {
@@ -213,5 +212,66 @@ input[type=number] {
   right: -55px;
 }
 .home_videos_slider .owl-theme .owl-nav :hover {
+  background: none !important;
+}
+
+.home_videos_slider {
+  position: relative;
+}
+.home_videos_slider .owl-theme .custom-nav {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
+}
+.home_videos_slider .owl-theme .custom-nav .owl-prev, .home_videos_slider .owl-theme .custom-nav .owl-next {
+  position: absolute;
+  height: 100px;
+  color: inherit;
+  background: none;
+  border: none;
+  z-index: 100;
+}
+.home_videos_slider .owl-theme .custom-nav .owl-prev i, .home_videos_slider .owl-theme .custom-nav .owl-next i {
+  font-size: 2.5rem;
+  color: #cecece;
+}
+.home_videos_slider .owl-theme .custom-nav .owl-prev {
+  left: -55px;
+}
+.home_videos_slider .owl-theme .custom-nav .owl-next {
+  right: -55px;
+}
+.home_videos_slider .owl-theme .owl-nav :hover {
+  background: none !important;
+}
+.home_videos_slider .additional_products_slider {
+  position: relative;
+}
+.home_videos_slider .additional_products_slider .owl-theme .custom-nav {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
+}
+.home_videos_slider .additional_products_slider .owl-theme .custom-nav .owl-prev, .home_videos_slider .additional_products_slider .owl-theme .custom-nav .owl-next {
+  position: absolute;
+  height: 100px;
+  color: inherit;
+  background: none;
+  border: none;
+  z-index: 100;
+}
+.home_videos_slider .additional_products_slider .owl-theme .custom-nav .owl-prev i, .home_videos_slider .additional_products_slider .owl-theme .custom-nav .owl-next i {
+  font-size: 2.5rem;
+  color: #cecece;
+}
+.home_videos_slider .additional_products_slider .owl-theme .custom-nav .owl-prev {
+  left: -55px;
+}
+.home_videos_slider .additional_products_slider .owl-theme .custom-nav .owl-next {
+  right: -55px;
+}
+.home_videos_slider .additional_products_slider .owl-theme .owl-nav :hover {
   background: none !important;
 }/*# sourceMappingURL=style.css.map */

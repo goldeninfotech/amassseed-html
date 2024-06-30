@@ -100,7 +100,7 @@ input:focus,
 select:focus {
   outline: none !important;
   box-shadow: none !important;
-  border: 1px solid #184b71 !important;
+  // border: 1px solid #184b71 !important;
 }
 
 textarea:focus {
@@ -212,6 +212,87 @@ input[type="number"] {
   .owl-theme .owl-nav :hover {
     background: none !important;
   }
+}
+
+
+.home_videos_slider {
+
+  position: relative;
+
+  .owl-theme {
+      .custom-nav {
+          position: absolute;
+          top: 20%;
+          left: 0;
+          right: 0;
+
+          .owl-prev, .owl-next {
+              position: absolute;
+              height: 100px;
+              color: inherit;
+              background: none;
+              border: none;
+              z-index: 100;
+
+              i {
+                  font-size: 2.5rem;
+                  color: #cecece;
+              }
+          }
+
+          .owl-prev {
+              left: -55px;
+          }
+
+          .owl-next {
+              right: -55px;
+          }
+      }
+  }
+  .owl-theme .owl-nav :hover {
+    background: none !important;
+  }
+
+
+  .additional_products_slider {
+
+  position: relative;
+
+  .owl-theme {
+      .custom-nav {
+          position: absolute;
+          top: 20%;
+          left: 0;
+          right: 0;
+
+          .owl-prev, .owl-next {
+              position: absolute;
+              height: 100px;
+              color: inherit;
+              background: none;
+              border: none;
+              z-index: 100;
+
+              i {
+                  font-size: 2.5rem;
+                  color: #cecece;
+              }
+          }
+
+          .owl-prev {
+              left: -55px;
+          }
+
+          .owl-next {
+              right: -55px;
+          }
+      }
+  }
+  .owl-theme .owl-nav :hover {
+    background: none !important;
+  }
+  
+}
 }
 
 
