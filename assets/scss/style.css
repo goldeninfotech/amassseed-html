@@ -274,4 +274,103 @@ input[type=number] {
 }
 .home_videos_slider .additional_products_slider .owl-theme .owl-nav :hover {
   background: none !important;
+}
+
+.news_slider {
+  position: relative;
+}
+.news_slider .owl-theme .custom-nav {
+  position: absolute;
+  top: 23%;
+  left: 0;
+  right: 0;
+}
+.news_slider .owl-theme .custom-nav .owl-prev, .news_slider .owl-theme .custom-nav .owl-next {
+  position: absolute;
+  height: 100px;
+  color: inherit;
+  background: none;
+  border: none;
+  z-index: 100;
+}
+.news_slider .owl-theme .custom-nav .owl-prev i, .news_slider .owl-theme .custom-nav .owl-next i {
+  font-size: 2.5rem;
+  color: #cecece;
+}
+.news_slider .owl-theme .custom-nav .owl-prev {
+  left: -55px;
+}
+.news_slider .owl-theme .custom-nav .owl-next {
+  right: -55px;
+}
+.news_slider .owl-theme .owl-nav :hover {
+  background: none !important;
+}
+.news_slider .additional_products_slider {
+  position: relative;
+}
+.news_slider .additional_products_slider .owl-theme .custom-nav {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
+}
+.news_slider .additional_products_slider .owl-theme .custom-nav .owl-prev, .news_slider .additional_products_slider .owl-theme .custom-nav .owl-next {
+  position: absolute;
+  height: 100px;
+  color: inherit;
+  background: none;
+  border: none;
+  z-index: 100;
+}
+.news_slider .additional_products_slider .owl-theme .custom-nav .owl-prev i, .news_slider .additional_products_slider .owl-theme .custom-nav .owl-next i {
+  font-size: 2.5rem;
+  color: #cecece;
+}
+.news_slider .additional_products_slider .owl-theme .custom-nav .owl-prev {
+  left: -55px;
+}
+.news_slider .additional_products_slider .owl-theme .custom-nav .owl-next {
+  right: -55px;
+}
+.news_slider .additional_products_slider .owl-theme .owl-nav :hover {
+  background: none !important;
+}
+
+.others_products {
+  position: relative;
+}
+.others_products .owl-theme .custom-nav {
+  position: absolute;
+  top: -25%;
+  left: 0;
+  right: 0;
+}
+.others_products .owl-theme .custom-nav .owl-prev, .others_products .owl-theme .custom-nav .owl-next {
+  position: absolute;
+  height: 100px;
+  color: inherit;
+  background: none;
+  border: none;
+  z-index: 100;
+}
+.others_products .owl-theme .custom-nav .owl-prev i, .others_products .owl-theme .custom-nav .owl-next i {
+  font-size: 2.5rem;
+  color: #cecece;
+}
+.others_products .owl-theme .custom-nav .owl-prev {
+  right: 18px;
+}
+.others_products .owl-theme .custom-nav .owl-next {
+  right: -40px;
+}
+.others_products .owl-theme .owl-nav :hover {
+  background: none !important;
+}
+
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }/*# sourceMappingURL=style.css.map */

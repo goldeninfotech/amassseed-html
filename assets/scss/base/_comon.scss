@@ -295,6 +295,135 @@ input[type="number"] {
 }
 }
 
+.news_slider {
+
+  position: relative;
+
+  .owl-theme {
+      .custom-nav {
+          position: absolute;
+          top: 23%;
+          left: 0;
+          right: 0;
+
+          .owl-prev, .owl-next {
+              position: absolute;
+              height: 100px;
+              color: inherit;
+              background: none;
+              border: none;
+              z-index: 100;
+
+              i {
+                  font-size: 2.5rem;
+                  color: #cecece;
+              }
+          }
+
+          .owl-prev {
+              left: -55px;
+          }
+
+          .owl-next {
+              right: -55px;
+          }
+      }
+  }
+  .owl-theme .owl-nav :hover {
+    background: none !important;
+  }
+
+
+  .additional_products_slider {
+
+  position: relative;
+
+  .owl-theme {
+      .custom-nav {
+          position: absolute;
+          top: 20%;
+          left: 0;
+          right: 0;
+
+          .owl-prev, .owl-next {
+              position: absolute;
+              height: 100px;
+              color: inherit;
+              background: none;
+              border: none;
+              z-index: 100;
+
+              i {
+                  font-size: 2.5rem;
+                  color: #cecece;
+              }
+          }
+
+          .owl-prev {
+              left: -55px;
+          }
+
+          .owl-next {
+              right: -55px;
+          }
+      }
+  }
+  .owl-theme .owl-nav :hover {
+    background: none !important;
+  }
+  
+}
+}
+.others_products {
+
+  position: relative;
+
+  .owl-theme {
+      .custom-nav {
+          position: absolute;
+          top: -25%;
+          left: 0;
+          right: 0;
+
+          .owl-prev, .owl-next {
+              position: absolute;
+              height: 100px;
+              color: inherit;
+              background: none;
+              border: none;
+              z-index: 100;
+
+              i {
+                  font-size: 2.5rem;
+                  color: #cecece;
+              }
+          }
+
+          .owl-prev {
+             right: 18px;
+          }
+
+          .owl-next {
+              right: -40px;
+          }
+      }
+  }
+  .owl-theme .owl-nav :hover {
+    background: none !important;
+  }
+}
+
+
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+
+
+
 
 
 

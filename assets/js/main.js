@@ -66,7 +66,57 @@ $(document).ready(function(){
               items: 3
           }
       }
-  });
+    });
+
+    // Initialize the fourth carousel
+    $("#news_slider_view").owlCarousel({
+        loop: true,
+        margin: 15,
+        nav: true,
+        dots: true,
+        autoplay: false,
+        navText: [
+            '<img src="assets/images/icons/curosel_arrow_left.png" alt="arrow-left">', '<img src="assets/images/icons/curosel_arrow_right.png" alt="arrow-right">'
+        ],
+        navContainer: '.news_slider .custom-nav',
+        items: 3,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 4
+            }
+        }
+      });
+
+    // Initialize the fifth carousel
+    $("#others_products_view").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        dots: true,
+        autoplay: false,
+        navText: [
+            '<img src="assets/images/icons/curosel_arrow_left.png" alt="arrow-left">', '<img src="assets/images/icons/curosel_arrow_right.png" alt="arrow-right">'
+        ],
+        navContainer: '.others_products .custom-nav',
+        items: 3,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 4
+            }
+        }
+      });
 });
 
   //Gallery
@@ -116,11 +166,17 @@ $(document).ready(function(){
     },
 });
 
+// Sticky Header
+window.onscroll = function() {myFunction()};
 
-  //Video Popup
-//   $(".modal_video_btn").modalVideo({
-//     youtube: {
-//       controls: 1,
-//       nocookie: true,
-//     },
-//   });
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky-nav")
+  } else {
+    navbar.classList.remove("sticky-nav");
+  }
+}
+
