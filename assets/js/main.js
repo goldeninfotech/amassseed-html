@@ -167,26 +167,24 @@ $(document).ready(function(){
 });
 
 // Sticky Header
-window.onscroll = function() {myFunction()};
-
+// Get the elements
 var navbar = document.getElementById("navbar");
+var mybutton = document.getElementById("top_button");
 var sticky = navbar.offsetTop;
 
-function myFunction() {
+// When the user scrolls the page, execute both functions
+window.onscroll = function() {
+  scrollFunction();
+  stickyHeader();
+};
+
+function stickyHeader() {
   if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky-nav")
+    navbar.classList.add("sticky-nav");
   } else {
     navbar.classList.remove("sticky-nav");
   }
 }
-
-
-// ScrollToUp
-// Get the button
-let mybutton = document.getElementById("top_button");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -196,8 +194,7 @@ function scrollFunction() {
   }
 }
 
-// When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-  window.scrollTo({top: 0, behavior: 'smooth'});
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
