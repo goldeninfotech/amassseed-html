@@ -117,6 +117,31 @@ $(document).ready(function(){
             }
         }
       });
+
+    //   Initialize the sixth carousel
+    $("#clint-partners").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        dots: false,
+        autoplay: false,
+        navText: [
+            '<img src="assets/images/icons/curosel_arrow_left.png" alt="arrow-left">', '<img src="assets/images/icons/curosel_arrow_right.png" alt="arrow-right">'
+        ],
+        navContainer: '.others_products .custom-nav',
+        items: 3,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 4
+            }
+        }
+      });
 });
 
   //Gallery
