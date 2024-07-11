@@ -51,9 +51,9 @@ $(document).ready(function(){
       dots: false,
       autoplay: false,
       navText: [
-          '<img src="assets/images/icons/curosel_arrow_left.png" alt="arrow-left">', '<img src="assets/images/icons/curosel_arrow_right.png" alt="arrow-right">'
+        '<img src="assets/images/icons/curosel_arrow_left.png" alt="arrow-left">', '<img src="assets/images/icons/curosel_arrow_right.png" alt="arrow-right">'
       ],
-      navContainer: '.home_videos_slider .custom-nav',
+      navContainer: '.additional_products_slider .custom-nav',
       items: 3,
       responsive: {
           0: {
@@ -96,7 +96,7 @@ $(document).ready(function(){
     // Initialize the fifth carousel
     $("#others_products_view").owlCarousel({
         loop: true,
-        margin: 10,
+        margin: 15,
         nav: true,
         dots: true,
         autoplay: false,
@@ -222,4 +222,20 @@ function scrollFunction() {
 function topFunction() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+
+
+
+
+$(document).ready(function(){
+    $("#searchButton").click(function(){
+        $("#searchContainer").toggle();
+        $("#searchInput").focus(); // Focus on the input field when it appears
+        $("#close-toggle").toggle(); // Toggle close button along with content
+    });
+
+    $("#close-toggle").click(function(){
+        $("#searchContainer").toggle();
+        $("#close-toggle").toggle(); // Hide the close button itself
+    });
+});
 

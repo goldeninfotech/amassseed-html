@@ -245,36 +245,6 @@ input[type=number] {
 .home_videos_slider .owl-theme .owl-nav :hover {
   background: none !important;
 }
-.home_videos_slider .additional_products_slider {
-  position: relative;
-}
-.home_videos_slider .additional_products_slider .owl-theme .custom-nav {
-  position: absolute;
-  top: 20%;
-  left: 0;
-  right: 0;
-}
-.home_videos_slider .additional_products_slider .owl-theme .custom-nav .owl-prev, .home_videos_slider .additional_products_slider .owl-theme .custom-nav .owl-next {
-  position: absolute;
-  height: 100px;
-  color: inherit;
-  background: none;
-  border: none;
-  z-index: 100;
-}
-.home_videos_slider .additional_products_slider .owl-theme .custom-nav .owl-prev i, .home_videos_slider .additional_products_slider .owl-theme .custom-nav .owl-next i {
-  font-size: 2.5rem;
-  color: #cecece;
-}
-.home_videos_slider .additional_products_slider .owl-theme .custom-nav .owl-prev {
-  left: -55px;
-}
-.home_videos_slider .additional_products_slider .owl-theme .custom-nav .owl-next {
-  right: -55px;
-}
-.home_videos_slider .additional_products_slider .owl-theme .owl-nav :hover {
-  background: none !important;
-}
 
 .news_slider {
   position: relative;
@@ -334,6 +304,67 @@ input[type=number] {
   right: -55px;
 }
 .news_slider .additional_products_slider .owl-theme .owl-nav :hover {
+  background: none !important;
+}
+
+.additional_products_slider {
+  position: relative;
+}
+.additional_products_slider .owl-theme .custom-nav {
+  position: absolute;
+  top: 23%;
+  left: 0;
+  right: 0;
+}
+.additional_products_slider .owl-theme .custom-nav .owl-prev, .additional_products_slider .owl-theme .custom-nav .owl-next {
+  position: absolute;
+  height: 100px;
+  color: inherit;
+  background: none;
+  border: none;
+  z-index: 100;
+}
+.additional_products_slider .owl-theme .custom-nav .owl-prev i, .additional_products_slider .owl-theme .custom-nav .owl-next i {
+  font-size: 2.5rem;
+  color: #cecece;
+}
+.additional_products_slider .owl-theme .custom-nav .owl-prev {
+  left: -55px;
+}
+.additional_products_slider .owl-theme .custom-nav .owl-next {
+  right: -55px;
+}
+.additional_products_slider .owl-theme .owl-nav :hover {
+  background: none !important;
+}
+.additional_products_slider .additional_products_slider {
+  position: relative;
+}
+.additional_products_slider .additional_products_slider .owl-theme .custom-nav {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
+}
+.additional_products_slider .additional_products_slider .owl-theme .custom-nav .owl-prev, .additional_products_slider .additional_products_slider .owl-theme .custom-nav .owl-next {
+  position: absolute;
+  height: 100px;
+  color: inherit;
+  background: none;
+  border: none;
+  z-index: 100;
+}
+.additional_products_slider .additional_products_slider .owl-theme .custom-nav .owl-prev i, .additional_products_slider .additional_products_slider .owl-theme .custom-nav .owl-next i {
+  font-size: 2.5rem;
+  color: #cecece;
+}
+.additional_products_slider .additional_products_slider .owl-theme .custom-nav .owl-prev {
+  left: -55px;
+}
+.additional_products_slider .additional_products_slider .owl-theme .custom-nav .owl-next {
+  right: -55px;
+}
+.additional_products_slider .additional_products_slider .owl-theme .owl-nav :hover {
   background: none !important;
 }
 
@@ -402,4 +433,131 @@ input[type=number] {
 
 #top_button:hover {
   background-color: #555;
+}
+
+.hover-effect {
+  background-color: #FFF;
+  color: #333;
+  font-weight: bold;
+  font-size: 0.875rem; /* 14px */
+  width: 160.568px;
+  height: 34.544px;
+  text-align: center;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.hover-effect:hover {
+  background-color: #282925;
+  color: #FFF;
+  transform: scale(1.05);
+}
+
+.default_btn {
+  position: relative;
+  background-color: #1DAB7E;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  width: 182px;
+  margin-top: 20px; /* equivalent to mt-5 */
+  font-size: 1rem; /* 16px, optional for better text visibility */
+  overflow: hidden; /* Ensure pseudo-element is contained */
+  transition: background-color 0.3s, color 0.3s; /* Transition background and text color */
+}
+@media (max-width: 700px) {
+  .default_btn {
+    width: 150px;
+    height: 35px;
+    font-size: small;
+  }
+}
+
+.default_btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0; /* Start from the right */
+  width: 300%; /* Increase width for sliding effect */
+  height: 100%;
+  background: linear-gradient(to left, transparent 33%, #1DAB7E 16%, #1DAB7E 66%, transparent 66%);
+  transition: transform 0.8s ease; /* Smoother transition */
+  transform: translateX(100%); /* Initial position off the right */
+  border-radius: 5px; /* Maintain border radius */
+}
+
+.default_btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid transparent; /* Initial transparent border */
+  border-radius: 5px;
+  transition: border-color 0.6s ease; /* Smoother transition for border */
+}
+
+.default_btn:hover::before {
+  transform: translateX(0); /* Slide in on hover */
+}
+
+.default_btn:hover::after {
+  border-color: #1DAB7E; /* Change border color on hover */
+}
+
+.default_btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.toggle-content {
+  display: none; /* Hide by default */
+  margin-left: 3px;
+  position: relative;
+}
+
+#searchInput {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.5rem;
+  width: 160px; /* Adjust width as needed */
+}
+@media (max-width: 700px) {
+  #searchInput {
+    width: 140px;
+  }
+}
+
+#close-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  position: absolute;
+  top: 8px;
+  right: 5px;
+  display: none; /* Hide close button by default */
+}
+
+.variant_button {
+  background-color: transparent;
+  color: black;
+  border-radius: 2px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid #1DAB7E !important;
+  font-size: 12px;
+}
+
+.variant_button:hover {
+  border: 1px solid #1DAB7E !important;
+}
+
+.variant_button:focus {
+  background-color: #1DAB7E;
+  color: white;
 }/*# sourceMappingURL=style.css.map */

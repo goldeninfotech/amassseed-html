@@ -43,9 +43,10 @@
                 <div class="flex justify-between items-center gap-5">
                     <div class="flex items-center">
                         <!-- Become a Vendor Button -->
-                        <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal"
-                            class="bg-[#FFF] font-bold text-sm	 text-[#333] w-[160.568px] h-[34.544px] text-center rounded-[8px]">Become
-                            a Vendor</button>
+                        <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" class="hover-effect">
+                            Become a Vendor
+                        </button>
+                        
                     </div>
                     <div class="flex items-center gap-3">
                         <!-- Social Media icons -->
@@ -110,7 +111,7 @@
     <section id="navbar" class="bg-[#FFF]  ">
         <div class="container mx-auto px-5 py-3">
             <div class="flex justify-between items-center">
-                <div class="flex justify-between gap-[80px]">
+                <div class="flex justify-between gap-[60px]">
                     <a href="index.html" class="logo flex items-center gap-2 text-center w-auto h-[53px]">
                         <img src="assets/images/icons/logo_amaas.png" alt="">
                         <p class="uppercase flex items-center gap-2"><span
@@ -191,16 +192,18 @@
                     </div>
                 </div>
                 <div class="flex items-center gap-2">
-                    <div class="flex items-center">
-                        <button>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
-                                <path
-                                    d="M18.4531 17.4907L14.8281 13.8657M16.7865 9.15739C16.7865 12.8393 13.8017 15.8241 10.1198 15.8241C6.43789 15.8241 3.45312 12.8393 3.45312 9.15739C3.45312 5.47549 6.43789 2.49072 10.1198 2.49072C13.8017 2.49072 16.7865 5.47549 16.7865 9.15739Z"
-                                    stroke="#333333" stroke-width="1.34513" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
+                    <div class="flex items-center gap-3">
+                        <div id="searchContainer" class="toggle-content">
+                            <input type="text" id="searchInput" class="border border-gray-300 rounded px-2 py-1" placeholder="Search...">
+                            <button id="close-toggle">
+                                <img src="assets/images/icons/close_icon.svg" alt="Close">
+                            </button>
+                        </div>
+                        <button id="searchButton">
+                            <img src="assets/images/icons/search_icon_nav.svg" alt="Search">
                         </button>
-                    </div>
+                    
+                    </div>                                      
                     <div class="text-center md:hidden block">
                         <button
                         class="text-white focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none"
@@ -242,7 +245,7 @@
                         </p>
                         <div>
                             <button
-                                class="text-white text-sm md:text-base font-bold bg-[#1DAB7E] hover:bg-[#1DAB7E] focus:outline-none rounded-[5px] w-[142px] md:w-[182px] h-[35px] md:h-[50px] mt-5">
+                                class="default_btn">
                                 Discover More</button>
                         </div>
                     </div>
@@ -268,7 +271,7 @@
                         </p>
                         <div>
                             <button
-                                class="text-white text-sm md:text-base font-bold bg-[#1DAB7E] hover:bg-[#1DAB7E] focus:outline-none rounded-[5px] w-[142px] md:w-[182px] h-[35px] md:h-[50px] mt-5">
+                                class="default_btn">
                                 Discover More</button>
                         </div>
                     </div>
@@ -328,7 +331,9 @@
                         book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                         been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
                         galley of type and scrambled it to make a type specimen book.</p>
-                    <button class="bg-[#1DAB7E] mt-5 text-white rounded-[5px] h-[50px] w-[182px]">Read More</button>
+
+                        <button class="default_btn">Read More</button>
+
                     <img class="hidden md:block absolute bottom-[-10%] right-[-10%]" src="assets/images/home/about_seed_overlay_leaf.png" alt="">
                 </div>
             </div>
@@ -399,7 +404,7 @@
                         typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
                         1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
                         book.</p>
-                    <button class="bg-[#1DAB7E] mt-5 text-white rounded-[5px] h-[50px] w-[182px]">Read More</button>
+                    <button class="default_btn">Read More</button>
                 </div>
                 <div class="flex items
                 -center justify-center">
@@ -475,7 +480,7 @@
                         </div>
 
                       </div>  
-                    <button class="bg-[#1DAB7E] mt-5 text-white rounded-[5px] h-[50px] w-[182px]">Read More</button>
+                    <button class="default_btn">Read More</button>
                 </div>
             </div>
         </div>
@@ -616,7 +621,7 @@
                         <div class="w-[70px]">
                             <img src="assets/images/icons/working_process_2.svg" alt="">
                         </div>
-                        <div class="flex flex-col gap-2">
+                        <div class="flex flex-col items-start gap-2">
                             <p class="text-lg font-semibold">1. Contact Us at a Convenient Time for You</p>
                             <p class="text-[15px] font-normal">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply.  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
@@ -627,7 +632,7 @@
                         <div class="w-[70px]">
                             <img src="assets/images/icons/working_process_2.svg" alt="">
                         </div>
-                        <div class="flex flex-col gap-2">
+                        <div class="flex flex-col items-start gap-2">
                             <p class="text-lg font-semibold">2. Place an Order for Products or Services</p>
                             <p class="text-[15px] font-normal">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply.  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
@@ -638,7 +643,7 @@
                         <div class="w-[70px]">
                             <img src="assets/images/icons/working_process_3.svg" alt="">
                         </div>
-                        <div class="flex flex-col gap-2">
+                        <div class="flex flex-col items-start gap-2">
                             <p class="text-lg font-semibold">3. Get an Order that Made</p>
                             <p class="text-[15px] font-normal">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply.  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
@@ -647,8 +652,7 @@
                     </div>
 
 
-                    <button class=" bg-[#1DAB7E] text-white rounded-[5px] h-[50px] w-[165px] mt-5
-                    ">
+                    <button class="default_btn">
                         Get in Touch
                     </button>
                     
@@ -730,7 +734,7 @@
                 
             </div>
             <div class="text-center mt-5">
-                <button class="bg-[#1DAB7E] text-white rounded-[5px] h-[50px] w-[165px] mt-5">View More</button>
+                <button class="default_btn">View More</button>
             </div>
         </div>
     </section>
@@ -875,7 +879,7 @@
 
             <!-- Button -->
             <div class="text-center mt-5">
-                <button class="bg-[#1DAB7E] text-white rounded-[5px] h-[50px] w-[165px] mt-5">View More</button>
+                <button class="default_btn">View More</button>
             </div>
 
 
@@ -958,7 +962,7 @@
                         <p class="text-start text-sm text-[#FF0000]">This is required</p>
                         </div>
                         <div class="text-center flex items-center justify-center">
-                            <button class="bg-[#1DAB7E] text-white rounded-[5px] h-[50px] w-[165px] mt-5">Send Message</button>
+                            <button class="bg-[#1DAB7E] hover:bg-[#1f8f6b] text-sm md:text-base text-white rounded-[5px] h-[35px] md:h-[50px] w-[120px] md:w-[165px] mt-5">Send Message</button>
                         </div>
                         </form>
                     </div>
@@ -1082,7 +1086,7 @@
                             <input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-[#D7D7D7] peer" placeholder=" " required />
                             <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[#333] peer-focus:dark:text-[#D7D7D7] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email</label>
                         </div>
-                    <button class="bg-[#1DAB7E] text-white rounded-[5px] h-[50px] w-[165px]">Subscribe</button>
+                    <button class="bg-[#1DAB7E] hover:bg-[#1f8f6b] text-white rounded-[5px] h-[35px] md:h-[50px] w-[120px] md:w-[165px]">Subscribe</button>
                     <p class="text-[#333] text-sm md:text-base font-semibold"><span>Terms and Conditions </span> |
                         <span>Terms and Conditions </span>
                     </p>
