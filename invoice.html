@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/scss/style.css">
+</head>
+<body>
+
+    <div class="container mx-auto px-8">
+        <div class="flex justify-between gap-10 items-center">
+            <div class="flex justify-center items-center flex-col bg-[#0DB075] py-1 px-10">
+                <img class="w-[40px] h-[38px]"  src="assets/images/icons/logo_amaas.png" alt="logo">
+                <p class="text-[#FFFF] text-base font-semibold">Amaas Seed</p>
+            </div>
+            <div>
+                <h1 class="text-4xl font-bold text-[#0DB075]">Invoice</h1>
+            </div>
+            <div>
+
+            </div>
+        </div>
+        <div class="grid grid-cols-3 items-center mt-8">
+            <div>
+                <h1 class="text-xl text-[#1DAB7E] font-bold">Bill From</h1>
+                 <div class="">
+                    <p><span class="font-bold text-sm">Amass Seed</span></p>
+                    <p><span class="font-bold text-sm">Phone:</span> <span class="text-sm font-normal">+8809609001005-06 </span></p>
+                    <p><span class="font-bold text-sm">Email:</span> <span class="text-sm font-normal"> info@amassseed.com </span></p>
+                    <p><span class="font-bold text-sm">Web:</span> <span class="text-sm font-normal"> www.amassseed.com </span></p>
+                 </div>
+            </div>
+                    <div class="mt-6">
+
+                        <p><span class="font-bold text-sm">Order Type :</span> <span class="text-sm font-normal">Credit</span></p>
+                        <p><span class="font-bold text-sm">Order ID:</span> <span class="text-sm text-[#2975E8] font-normal">#52457</span></p>
+                        <p><span class="font-bold text-sm">Order Date:</span> <span class="text-sm font-normal">06/12/2023</span></p>
+                        <p><span class="font-bold text-sm">Invoice Date:</span> <span class="text-sm font-normal">06/12/2023</span></p>
+                    </div>
+            <div>
+                <h1 class="text-xl text-[#1DAB7E] font-bold ">Bill to</h1>
+                <div class="">
+                    <p><span class="font-bold text-sm">Joy Gosh</span></p>
+                    <p><span class="font-bold text-sm">Phone:</span> <span class="text-sm font-normal">+8809609001005-06 </span></p>
+                    <p><span class="font-bold text-sm">Email:</span> <span class="text-sm font-normal"> House #13,Garib-E-Nawyaz Avenue, Uttara, Dhaka 1230. </span></p>
+                </div>
+                </div>
+        </div>
+
+        <div class="mt-8">
+            <table class="w-full">
+                <thead class="bg-[#EEF9F5]">
+                    <tr class="h-[50px] text-[#0DB075] font-bold" >
+                        <th class="border border-gray-300">SL No</th>
+                        <th class="border border-gray-300">Product Name</th>
+                        <th class="border border-gray-300">Qty</th>
+                        <th class="border border-gray-300">Unit Price</th>
+                        <th class="border border-gray-300">Discount</th>
+                        <th class="border border-gray-300">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="h-[50px]">
+                        <td class="border text-center  border-gray-300">1</td>
+                        <td class="border text-center font-semibold text-sm border-gray-300">Product 1</td>
+                        <td class="border text-center border-gray-300">3</td>
+                        <td class="border text-center border-gray-300">$50.00</td>
+                        <td class="border text-center border-gray-300">$0.00</td>
+                        <td class="border text-center font-semibold text-sm border-gray-300">$150.00</td>
+                    </tr>
+                    <tr class="h-[50px]">
+                        <td class="border text-center  border-gray-300">2</td>
+                        <td class="border text-center font-semibold text-sm border-gray-300">Product 2</td>
+                        <td class="border text-center border-gray-300">2</td>
+                        <td class="border text-center border-gray-300">$100.00</td>
+                        <td class="border text-center border-gray-300">$0.00</td>
+                        <td class="border text-center font-semibold text-sm border-gray-300">$200.00</td>
+                    </tr>
+                    <tr class="h-[50px]">
+                        <td class="border text-center  border-gray-300">3</td>
+                        <td class="border text-center font-semibold text-sm border-gray-300">Product 3</td>
+                        <td class="border text-center border-gray-300">1</td>
+                        <td class="border text-center border-gray-300">$100.00</td>
+                        <td class="border text-center border-gray-300">$50.00</td>
+                        <td class="border text-center font-semibold text-sm border-gray-300">$100.00</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="mt-8 flex justify-between">
+          <div>
+            <img src="assets/images/icons/app-downlaod.png" alt="">
+          </div>
+          <div class="w-[400px] flex gap-4 flex-col bg-[#EEF9F5] px-5 py-6">
+            <div class="flex border-b-2 border-[#1DAB7E] p-1 justify-between items-center">
+                <p class="text-sm">Sub Total</p>
+                <p class="text-sm">$1008</p>
+            </div>
+            <div class="flex justify-between items-center">
+                <p class="text-sm">Discount Applied</p>
+                <p class="text-sm">$50</p>
+            </div>
+            <div class="flex justify-between items-center">
+                <p class="text-sm">Sale Discount</p>
+                <p class="text-sm">$50</p>
+            </div>
+            <div class="flex justify-between  border-b-2 border-[#1DAB7E] pb-2 items-center">
+                <p>Delivery Charge</p>
+                <p>$50</p>
+            </div>
+            <div class="flex justify-between items-center">
+                <p class="text-sm font-bold">Grand Total</p>
+                <p class="text-sm font-bold">$1008</p>
+            </div>
+            <div class="flex justify-between items-center">
+                <p class="text-sm font-semibold text-[#1DAB7E]">Total Payable Amount :</p>
+                <p class="text-sm font-semibold text-[#1DAB7E]">$1008</p>
+            </div>
+
+
+
+
+          </div>
+        </div>
+
+        <!-- <div class="mt-10 text-center">
+            <button class="bg-[#1DAB7E] h-[60px] w-[186px] font-bold text-white">
+                Download Invoice
+            </button>
+        </div> -->
+    </div>
+    
+
+         
+        <!-- JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="assets/js/main.js"></script>
+</body>
+</html>
