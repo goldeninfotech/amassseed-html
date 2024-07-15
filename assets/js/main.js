@@ -27,7 +27,7 @@ $(document).ready(function(){
     // Initialize the second carousel
     $("#clint-testimony").owlCarousel({
         loop: true,
-        margin: 15,
+        margin: 10,
         nav: false,
         dots: true,
         responsive: {
@@ -46,7 +46,7 @@ $(document).ready(function(){
     // Initialize the Third carousel
     $("#product-details").owlCarousel({
       loop: true,
-      margin: 20,
+      margin: 10,
       nav: true,
       dots: false,
       autoplay: false,
@@ -57,7 +57,7 @@ $(document).ready(function(){
       items: 3,
       responsive: {
           0: {
-              items: 1
+              items: 2
           },
           600: {
               items: 2
@@ -98,7 +98,7 @@ $(document).ready(function(){
         loop: true,
         margin: 15,
         nav: true,
-        dots: true,
+        dots: false,
         autoplay: false,
         navText: [
             '<img src="assets/images/icons/curosel_arrow_left.png" alt="arrow-left">', '<img src="assets/images/icons/curosel_arrow_right.png" alt="arrow-right">'
@@ -107,7 +107,7 @@ $(document).ready(function(){
         items: 3,
         responsive: {
             0: {
-                items: 1
+                items: 2
             },
             600: {
                 items: 2
@@ -123,7 +123,7 @@ $(document).ready(function(){
         loop: true,
         margin: 10,
         nav: false,
-        dots: false,
+        dots: true,
         autoplay: false,
         navText: [
             '<img src="assets/images/icons/curosel_arrow_left.png" alt="arrow-left">', '<img src="assets/images/icons/curosel_arrow_right.png" alt="arrow-right">'
@@ -132,7 +132,7 @@ $(document).ready(function(){
         items: 3,
         responsive: {
             0: {
-                items: 1
+                items: 2
             },
             600: {
                 items: 2
