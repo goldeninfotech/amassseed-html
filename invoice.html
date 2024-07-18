@@ -3,141 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <title>Invoice</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="assets/scss/style.css">
 </head>
+<style>
+    p,h1,h2,h6{
+     margin: 0;   
+     font-family: "Manrope", sans-serif;
+    }
+    td, th {
+        border: 1px solid #D7D7D7;
+        background: #EEF9F5;
+        text-align: center;
+        }
+</style>
+</style>
 <body>
 
-    <div class="container mx-auto px-8">
-        <div class="flex justify-between gap-10 items-center">
-            <div class="flex justify-center items-center flex-col bg-[#0DB075] py-1 px-10">
-                <img class="w-[40px] h-[38px]"  src="assets/images/icons/logo_amaas.png" alt="logo">
-                <p class="text-[#FFFF] text-base font-semibold">Amaas Seed</p>
+    <div style="max-width: 900px; margin: 0 auto; padding: 0 2rem; margin-bottom: 15px;">
+        <div style="display: flex; justify-content: space-between; gap: 2.5rem; align-items: center; background-color: #EEF9F5;">
+            <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; background-color: #0DB075; padding: 0.25rem 2.5rem;">
+                <img style="width: 40px; height: 38px;" src="assets/images/icons/logo_amaas.png" alt="logo">
+                <p style="color: #FFFF; font-size: 1rem; font-weight: 600;">Amaas Seed</p>
             </div>
             <div>
-                <h1 class="text-4xl font-bold text-[#0DB075]">Invoice</h1>
+                <h1 style="font-size: 2.25rem; font-weight: 700; color: #0DB075;">Invoice</h1>
+            </div>
+            <div></div>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); align-items: center; margin-top: 2rem;">
+            <div>
+                <h1 style="font-size: 1.25rem; color: #1DAB7E; font-weight: 700;">Bill From</h1>
+                <div>
+                    <p><span style="font-weight: 700; font-size: 0.875rem;">Amass Seed</span></p>
+                    <p><span style="font-weight: 700; font-size: 0.875rem;">Phone:</span> <span style="font-size: 0.875rem; font-weight: 400;">+8809609001005-06</span></p>
+                    <p><span style="font-weight: 700; font-size: 0.875rem;">Email:</span> <span style="font-size: 0.875rem; font-weight: 400;">info@amassseed.com</span></p>
+                    <p><span style="font-weight: 700; font-size: 0.875rem;">Web:</span> <span style="font-size: 0.875rem; font-weight: 400;">www.amassseed.com</span></p>
+                </div>
+            </div>
+            <div style="margin-top: 1.5rem;">
+                <p><span style="font-weight: 700; font-size: 0.875rem;">Order Type:</span> <span style="font-size: 0.875rem; font-weight: 400;">Credit</span></p>
+                <p><span style="font-weight: 700; font-size: 0.875rem;">Order ID:</span> <span style="font-size: 0.875rem; color: #2975E8; font-weight: 400;">#52457</span></p>
+                <p><span style="font-weight: 700; font-size: 0.875rem;">Order Date:</span> <span style="font-size: 0.875rem; font-weight: 400;">06/12/2023</span></p>
+                <p><span style="font-weight: 700; font-size: 0.875rem;">Invoice Date:</span> <span style="font-size: 0.875rem; font-weight: 400;">06/12/2023</span></p>
             </div>
             <div>
-
+                <h1 style="font-size: 1.25rem; color: #1DAB7E; font-weight: 700;">Bill to</h1>
+                <div>
+                    <p><span style="font-weight: 700; font-size: 0.875rem;">Joy Gosh</span></p>
+                    <p><span style="font-weight: 700; font-size: 0.875rem;">Phone:</span> <span style="font-size: 0.875rem; font-weight: 400;">+8809609001005-06</span></p>
+                    <p><span style="font-weight: 700; font-size: 0.875rem;">Email:</span> <span style="font-size: 0.875rem; font-weight: 400;">House #13, Garib-E-Nawyaz Avenue, Uttara, Dhaka 1230.</span></p>
+                </div>
             </div>
         </div>
-        <div class="grid grid-cols-3 items-center mt-8">
-            <div>
-                <h1 class="text-xl text-[#1DAB7E] font-bold">Bill From</h1>
-                 <div class="">
-                    <p><span class="font-bold text-sm">Amass Seed</span></p>
-                    <p><span class="font-bold text-sm">Phone:</span> <span class="text-sm font-normal">+8809609001005-06 </span></p>
-                    <p><span class="font-bold text-sm">Email:</span> <span class="text-sm font-normal"> info@amassseed.com </span></p>
-                    <p><span class="font-bold text-sm">Web:</span> <span class="text-sm font-normal"> www.amassseed.com </span></p>
-                 </div>
-            </div>
-                    <div class="mt-6">
 
-                        <p><span class="font-bold text-sm">Order Type :</span> <span class="text-sm font-normal">Credit</span></p>
-                        <p><span class="font-bold text-sm">Order ID:</span> <span class="text-sm text-[#2975E8] font-normal">#52457</span></p>
-                        <p><span class="font-bold text-sm">Order Date:</span> <span class="text-sm font-normal">06/12/2023</span></p>
-                        <p><span class="font-bold text-sm">Invoice Date:</span> <span class="text-sm font-normal">06/12/2023</span></p>
-                    </div>
-            <div>
-                <h1 class="text-xl text-[#1DAB7E] font-bold ">Bill to</h1>
-                <div class="">
-                    <p><span class="font-bold text-sm">Joy Gosh</span></p>
-                    <p><span class="font-bold text-sm">Phone:</span> <span class="text-sm font-normal">+8809609001005-06 </span></p>
-                    <p><span class="font-bold text-sm">Email:</span> <span class="text-sm font-normal"> House #13,Garib-E-Nawyaz Avenue, Uttara, Dhaka 1230. </span></p>
-                </div>
-                </div>
-        </div>
-
-        <div class="mt-8">
-            <table class="w-full">
-                <thead class="bg-[#EEF9F5]">
-                    <tr class="h-[50px] text-[#0DB075] font-bold" >
-                        <th class="border border-gray-300">SL No</th>
-                        <th class="border border-gray-300">Product Name</th>
-                        <th class="border border-gray-300">Qty</th>
-                        <th class="border border-gray-300">Unit Price</th>
-                        <th class="border border-gray-300">Discount</th>
-                        <th class="border border-gray-300">Price</th>
+        <div style="margin-top: 2rem;">
+            <table style="border-collapse: collapse;width: 100%;">
+                <thead style="background-color: #EEF9F5;">
+                    <tr style="height: 50px; color: #0DB075; font-weight: 700;">
+                        <th >SL No</th>
+                        <th >Product Name</th>
+                        <th >Qty</th>
+                        <th >Unit Price</th>
+                        <th>Discount</th>
+                        <th>Price</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr class="h-[50px]">
-                        <td class="border text-center  border-gray-300">1</td>
-                        <td class="border text-center font-semibold text-sm border-gray-300">Product 1</td>
-                        <td class="border text-center border-gray-300">3</td>
-                        <td class="border text-center border-gray-300">$50.00</td>
-                        <td class="border text-center border-gray-300">$0.00</td>
-                        <td class="border text-center font-semibold text-sm border-gray-300">$150.00</td>
+                    <tr style="height: 50px;">
+                        <td >1</td>
+                        <td style=" text-align: center; font-weight: 600; font-size: 0.875rem;">Product 1</td>
+                        <td >3</td>
+                        <td >$50.00</td>
+                        <td >$0.00</td>
+                        <td style=" text-align: center; font-weight: 600; font-size: 0.875rem;">$150.00</td>
                     </tr>
-                    <tr class="h-[50px]">
-                        <td class="border text-center  border-gray-300">2</td>
-                        <td class="border text-center font-semibold text-sm border-gray-300">Product 2</td>
-                        <td class="border text-center border-gray-300">2</td>
-                        <td class="border text-center border-gray-300">$100.00</td>
-                        <td class="border text-center border-gray-300">$0.00</td>
-                        <td class="border text-center font-semibold text-sm border-gray-300">$200.00</td>
+                    <tr style="height: 50px;">
+                        <td >2</td>
+                        <td style="font-weight: 600; font-size: 0.875rem;">Product 2</td>
+                        <td >2</td>
+                        <td >$100.00</td>
+                        <td >$0.00</td>
+                        <td style=" text-align: center; font-weight: 600; font-size: 0.875rem;">$200.00</td>
                     </tr>
-                    <tr class="h-[50px]">
-                        <td class="border text-center  border-gray-300">3</td>
-                        <td class="border text-center font-semibold text-sm border-gray-300">Product 3</td>
-                        <td class="border text-center border-gray-300">1</td>
-                        <td class="border text-center border-gray-300">$100.00</td>
-                        <td class="border text-center border-gray-300">$50.00</td>
-                        <td class="border text-center font-semibold text-sm border-gray-300">$100.00</td>
+                    <tr style="height: 50px;">
+                        <td >3</td>
+                        <td style="font-weight: 600; font-size: 0.875rem;">Product 3</td>
+                        <td >1</td>
+                        <td >$100.00</td>
+                        <td >$50.00</td>
+                        <td style="font-weight: 600; font-size: 0.875rem;">$100.00</td>
                     </tr>
-
                 </tbody>
             </table>
         </div>
 
-        <div class="mt-8 flex justify-between">
-          <div>
-            <img src="assets/images/icons/app-downlaod.png" alt="">
-          </div>
-          <div class="w-[400px] flex gap-4 flex-col bg-[#EEF9F5] px-5 py-6">
-            <div class="flex border-b-2 border-[#1DAB7E] p-1 justify-between items-center">
-                <p class="text-sm">Sub Total</p>
-                <p class="text-sm">$1008</p>
+        <div style="margin-top: 2rem; display: flex; justify-content: space-between;">
+            <div>
+                <img src="assets/images/icons/app-downlaod.png" alt="">
             </div>
-            <div class="flex justify-between items-center">
-                <p class="text-sm">Discount Applied</p>
-                <p class="text-sm">$50</p>
+            <div style="width: 400px; display: flex; gap: 1rem; flex-direction: column; background-color: #EEF9F5; padding: 1.25rem 1.25rem;">
+                <div style="display: flex; border-bottom: 2px solid #1DAB7E; padding: 0.25rem; justify-content: space-between; align-items: center;">
+                    <p style="font-size: 0.875rem;">Sub Total</p>
+                    <p style="font-size: 0.875rem;">$1008</p>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <p style="font-size: 0.875rem;">Discount Applied</p>
+                    <p style="font-size: 0.875rem;">$50</p>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <p style="font-size: 0.875rem;">Sale Discount</p>
+                    <p style="font-size: 0.875rem;">$50</p>
+                </div>
+                <div style="display: flex; justify-content: space-between; border-bottom: 2px solid #1DAB7E; padding-bottom: 0.5rem; align-items: center;">
+                    <p>Delivery Charge</p>
+                    <p>$50</p>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <p style="font-size: 0.875rem; font-weight: 700;">Grand Total</p>
+                    <p style="font-size: 0.875rem; font-weight: 700;">$1008</p>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <p style="font-size: 0.875rem; font-weight: 600; color: #1DAB7E;">Total Payable Amount :</p>
+                    <p style="font-size: 0.875rem; font-weight: 600; color: #1DAB7E;">$1008</p>
+                </div>
             </div>
-            <div class="flex justify-between items-center">
-                <p class="text-sm">Sale Discount</p>
-                <p class="text-sm">$50</p>
-            </div>
-            <div class="flex justify-between  border-b-2 border-[#1DAB7E] pb-2 items-center">
-                <p>Delivery Charge</p>
-                <p>$50</p>
-            </div>
-            <div class="flex justify-between items-center">
-                <p class="text-sm font-bold">Grand Total</p>
-                <p class="text-sm font-bold">$1008</p>
-            </div>
-            <div class="flex justify-between items-center">
-                <p class="text-sm font-semibold text-[#1DAB7E]">Total Payable Amount :</p>
-                <p class="text-sm font-semibold text-[#1DAB7E]">$1008</p>
-            </div>
-
-
-
-
-          </div>
         </div>
 
-        <!-- <div class="mt-10 text-center">
-            <button class="bg-[#1DAB7E] h-[60px] w-[186px] font-bold text-white">
+        <!-- <div style="margin-top: 2.5rem; text-align: center;">
+            <button style="background-color: #1DAB7E; height: 60px; width: 186px; font-weight: 700; color: white;">
                 Download Invoice
             </button>
         </div> -->
     </div>
     
-
-         
-        <!-- JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="assets/js/main.js"></script>
 </body>
 </html>
