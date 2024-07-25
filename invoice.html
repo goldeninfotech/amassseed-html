@@ -13,7 +13,7 @@
      margin: 0;   
      font-family: "Manrope", sans-serif;
     }
-    td, th {
+    .product_table td, th {
         border: 1px solid #D7D7D7;
         background: #EEF9F5;
         text-align: center;
@@ -23,44 +23,48 @@
 <body>
 
     <div style="max-width: 900px; margin: 0 auto; padding: 0 2rem; margin-bottom: 15px;">
-        <div style="display: flex; justify-content: space-between; gap: 2.5rem; align-items: center; background-color: #EEF9F5;">
-            <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; background-color: #0DB075; padding: 0.25rem 2.5rem;">
-                <img style="width: 40px; height: 38px;" src="assets/images/icons/logo_amaas.png" alt="logo">
-                <p style="color: #FFFF; font-size: 1rem; font-weight: 600;">Amaas Seed</p>
-            </div>
-            <div>
-                <h1 style="font-size: 2.25rem; font-weight: 700; color: #0DB075;">Invoice</h1>
-            </div>
-            <div></div>
-        </div>
-        <div style="display: grid; grid-template-columns: repeat(3, 1fr); align-items: center; margin-top: 2rem;">
-            <div>
-                <h1 style="font-size: 1.25rem; color: #1DAB7E; font-weight: 700;">Bill From</h1>
-                <div>
-                    <p><span style="font-weight: 700; font-size: 0.875rem;">Amass Seed</span></p>
-                    <p><span style="font-weight: 700; font-size: 0.875rem;">Phone:</span> <span style="font-size: 0.875rem; font-weight: 400;">+8809609001005-06</span></p>
-                    <p><span style="font-weight: 700; font-size: 0.875rem;">Email:</span> <span style="font-size: 0.875rem; font-weight: 400;">info@amassseed.com</span></p>
-                    <p><span style="font-weight: 700; font-size: 0.875rem;">Web:</span> <span style="font-size: 0.875rem; font-weight: 400;">www.amassseed.com</span></p>
-                </div>
-            </div>
-            <div style="margin-top: 1.5rem;">
-                <p><span style="font-weight: 700; font-size: 0.875rem;">Order Type:</span> <span style="font-size: 0.875rem; font-weight: 400;">Credit</span></p>
-                <p><span style="font-weight: 700; font-size: 0.875rem;">Order ID:</span> <span style="font-size: 0.875rem; color: #2975E8; font-weight: 400;">#52457</span></p>
-                <p><span style="font-weight: 700; font-size: 0.875rem;">Order Date:</span> <span style="font-size: 0.875rem; font-weight: 400;">06/12/2023</span></p>
-                <p><span style="font-weight: 700; font-size: 0.875rem;">Invoice Date:</span> <span style="font-size: 0.875rem; font-weight: 400;">06/12/2023</span></p>
-            </div>
-            <div>
-                <h1 style="font-size: 1.25rem; color: #1DAB7E; font-weight: 700;">Bill to</h1>
-                <div>
-                    <p><span style="font-weight: 700; font-size: 0.875rem;">Joy Gosh</span></p>
-                    <p><span style="font-weight: 700; font-size: 0.875rem;">Phone:</span> <span style="font-size: 0.875rem; font-weight: 400;">+8809609001005-06</span></p>
-                    <p><span style="font-weight: 700; font-size: 0.875rem;">Email:</span> <span style="font-size: 0.875rem; font-weight: 400;">House #13, Garib-E-Nawyaz Avenue, Uttara, Dhaka 1230.</span></p>
-                </div>
-            </div>
-        </div>
+        <table style="width: 100%; background-color: #EEF9F5; border-collapse: collapse;">
+            <tr>
+                <td style="width: 20%; text-align: center; background-color: #0DB075; padding: 0.25rem 2.5rem;">
+                    <img style="width: 40px; height: 38px;" src="assets/images/icons/logo_amaas.png" alt="logo">
+                    <p style="color: #FFFF; font-size: 1rem; font-weight: 600;">Amaas Seed</p>
+                </td>
+                <td style="width: 50%; text-align: center;">
+                    <h1 style="font-size: 2.25rem; font-weight: 700; color: #0DB075;">Invoice</h1>
+                </td>
+                <td style="width: 20%;"></td>
+            </tr>
+        </table>
+        <table style="width: 95%; margin-top: 2rem; border-collapse: collapse; margin-left: 30px;">
+            <tr>
+                <td style="width: 33%; vertical-align: top;">
+                    <h1 style="font-size: 1.25rem; color: #1DAB7E; font-weight: 700;">Bill From</h1>
+                    <div>
+                        <p><span style="font-weight: 700; font-size: 0.875rem;">Amass Seed</span></p>
+                        <p><span style="font-weight: 700; font-size: 0.875rem;">Phone:</span> <span style="font-size: 0.875rem; font-weight: 400;">+8809609001005-06</span></p>
+                        <p><span style="font-weight: 700; font-size: 0.875rem;">Email:</span> <span style="font-size: 0.875rem; font-weight: 400;">info@amassseed.com</span></p>
+                        <p><span style="font-weight: 700; font-size: 0.875rem;">Web:</span> <span style="font-size: 0.875rem; font-weight: 400;">www.amassseed.com</span></p>
+                    </div>
+                </td>
+                <td style="width: 33%; vertical-align: top; padding-top: 1.5rem;">
+                    <p><span style="font-weight: 700; font-size: 0.875rem;">Order Type:</span> <span style="font-size: 0.875rem; font-weight: 400;">Credit</span></p>
+                    <p><span style="font-weight: 700; font-size: 0.875rem;">Order ID:</span> <span style="font-size: 0.875rem; color: #2975E8; font-weight: 400;">#52457</span></p>
+                    <p><span style="font-weight: 700; font-size: 0.875rem;">Order Date:</span> <span style="font-size: 0.875rem; font-weight: 400;">06/12/2023</span></p>
+                    <p><span style="font-weight: 700; font-size: 0.875rem;">Invoice Date:</span> <span style="font-size: 0.875rem; font-weight: 400;">06/12/2023</span></p>
+                </td>
+                <td style="width: 33%; vertical-align: top;">
+                    <h1 style="font-size: 1.25rem; color: #1DAB7E; font-weight: 700;">Bill to</h1>
+                    <div>
+                        <p><span style="font-weight: 700; font-size: 0.875rem;">Joy Gosh</span></p>
+                        <p><span style="font-weight: 700; font-size: 0.875rem;">Phone:</span> <span style="font-size: 0.875rem; font-weight: 400;">+8809609001005-06</span></p>
+                        <p><span style="font-weight: 700; font-size: 0.875rem;">Email:</span> <span style="font-size: 0.875rem; font-weight: 400;">House #13, Garib-E-Nawyaz Avenue, Uttara, Dhaka 1230.</span></p>
+                    </div>
+                </td>
+            </tr>
+        </table>
 
-        <div style="margin-top: 2rem;">
-            <table style="border-collapse: collapse;width: 100%;">
+        <div class="product_table" style="margin-top: 2rem;">
+            <table style="border-collapse: collapse; width: 95%; margin-left: 30px;">
                 <thead style="background-color: #EEF9F5;">
                     <tr style="height: 50px; color: #0DB075; font-weight: 700;">
                         <th >SL No</th>
@@ -80,57 +84,45 @@
                         <td >$0.00</td>
                         <td style=" text-align: center; font-weight: 600; font-size: 0.875rem;">$150.00</td>
                     </tr>
-                    <tr style="height: 50px;">
-                        <td >2</td>
-                        <td style="font-weight: 600; font-size: 0.875rem;">Product 2</td>
-                        <td >2</td>
-                        <td >$100.00</td>
-                        <td >$0.00</td>
-                        <td style=" text-align: center; font-weight: 600; font-size: 0.875rem;">$200.00</td>
-                    </tr>
-                    <tr style="height: 50px;">
-                        <td >3</td>
-                        <td style="font-weight: 600; font-size: 0.875rem;">Product 3</td>
-                        <td >1</td>
-                        <td >$100.00</td>
-                        <td >$50.00</td>
-                        <td style="font-weight: 600; font-size: 0.875rem;">$100.00</td>
-                    </tr>
                 </tbody>
             </table>
         </div>
 
-        <div style="margin-top: 2rem; display: flex; justify-content: space-between;">
-            <div>
-                <img src="assets/images/icons/app-downlaod.png" alt="">
-            </div>
-            <div style="width: 400px; display: flex; gap: 1rem; flex-direction: column; background-color: #EEF9F5; padding: 1.25rem 1.25rem;">
-                <div style="display: flex; border-bottom: 2px solid #1DAB7E; padding: 0.25rem; justify-content: space-between; align-items: center;">
-                    <p style="font-size: 0.875rem;">Sub Total</p>
-                    <p style="font-size: 0.875rem;">$1008</p>
-                </div>
-                <div style="display: flex; justify-content: space-between; align-items: center;">
-                    <p style="font-size: 0.875rem;">Discount Applied</p>
-                    <p style="font-size: 0.875rem;">$50</p>
-                </div>
-                <div style="display: flex; justify-content: space-between; align-items: center;">
-                    <p style="font-size: 0.875rem;">Sale Discount</p>
-                    <p style="font-size: 0.875rem;">$50</p>
-                </div>
-                <div style="display: flex; justify-content: space-between; border-bottom: 2px solid #1DAB7E; padding-bottom: 0.5rem; align-items: center;">
-                    <p>Delivery Charge</p>
-                    <p>$50</p>
-                </div>
-                <div style="display: flex; justify-content: space-between; align-items: center;">
-                    <p style="font-size: 0.875rem; font-weight: 700;">Grand Total</p>
-                    <p style="font-size: 0.875rem; font-weight: 700;">$1008</p>
-                </div>
-                <div style="display: flex; justify-content: space-between; align-items: center;">
-                    <p style="font-size: 0.875rem; font-weight: 600; color: #1DAB7E;">Total Payable Amount :</p>
-                    <p style="font-size: 0.875rem; font-weight: 600; color: #1DAB7E;">$1008</p>
-                </div>
-            </div>
-        </div>
+        <table style="width: 95%; margin-left: 30px; border-spacing: 0;  margin-top: 2rem; border-collapse: collapse;">
+            <tr>
+                <td style="width: 50%;">
+                    <img src="assets/images/icons/app-downlaod.png" alt="">
+                </td>
+                <td style="width: 50%; background-color: #EEF9F5; padding: 1.25rem;">
+                    <table style="width: 100%; border-collapse: collapse; border-spacing: 0;">
+                        <tr>
+                            <td style="border-bottom: 2px solid #1DAB7E; padding-bottom: 5px;">Sub Total</td>
+                            <td style="border-bottom: 2px solid #1DAB7E;  padding-bottom: 5px; text-align: right;">$1008</td>
+                        </tr>
+                        <tr>
+                            <td style="padding-bottom: 5px;">Discount Applied</td>
+                            <td style="text-align: right;  padding-bottom: 5px;">$50</td>
+                        </tr>
+                        <tr>
+                            <td style="padding-bottom: 5px;">Sale Discount</td>
+                            <td style="text-align: right;  padding-bottom: 5px;">$50</td>
+                        </tr>
+                        <tr>
+                            <td style="border-bottom: 2px solid #1DAB7E; padding-bottom: 5px;">Delivery Charge</td>
+                            <td style="border-bottom: 2px solid #1DAB7E; padding-bottom: 5px; text-align: right;">$50</td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 700; padding-bottom: 5px;">Grand Total</td>
+                            <td style="font-weight: 700; text-align: right; padding-bottom: 5px;">$1008</td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600; color: #1DAB7E; padding-bottom: 5px;">Total Payable Amount :</td>
+                            <td style="font-weight: 600; color: #1DAB7E; text-align: right; padding-bottom: 5px;">$1008</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
 
         <!-- <div style="margin-top: 2.5rem; text-align: center;">
             <button style="background-color: #1DAB7E; height: 60px; width: 186px; font-weight: 700; color: white;">

@@ -12,20 +12,20 @@
     <title>Receipt</title>
   </head>
   <style>
-    .payment_date_amount {
-      margin-top: 2.5rem;
-      display: flex;
-      justify-content: center;
-      gap: 2.5rem;
-    }
+.payment_date_amount {
+    margin-top: 2.5rem;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
     table {
       width: 650px;
       border-collapse: collapse;
     }
     th,
     td {
-      border-radius: 5px;
-      border: 1px solid rgba(217, 217, 217, 0.59);
+      /* border-radius: 5px; */
+      /* border: 1px solid rgba(217, 217, 217, 0.59); */
       padding: 10px;
       text-align: center;
       font-family: "Poppins", sans-serif;
@@ -35,12 +35,6 @@
       display: flex;
       justify-content: center;
     }
-    h1,
-    p {
-      margin: 0;
-      font-family: "Poppins", sans-serif;
-
-    }
     .invoice_id h1,
     p {
       padding: 8px;
@@ -48,11 +42,17 @@
       color: #3a3a3a;
       font-weight: 400;
     }
+    h1,
+    p {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+
+    }
     .payment_amount_total{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
+    margin-top: 2.5rem;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
     }
 
     .payment_content{
@@ -71,53 +71,30 @@
         margin-bottom: 15px;
       "
     >
-      <div
-        style="
-          display: flex;
-          justify-content: space-between;
-          gap: 2.5rem;
-          align-items: center;
-          background-color: #eef9f5;
-        "
-      >
-        <div
-          style="
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            background-color: #0db075;
-            padding: 0.25rem 2.5rem;
-          "
-        >
-          <img
-            style="width: 40px; height: 38px"
-            src="assets/images/icons/logo_amaas.png"
-            alt="logo"
-          />
-          <p style="color: #ffff; font-size: 1rem; font-weight: 600">
-            Amaas Seed
-          </p>
-        </div>
-        <div>
-          <h1 style="font-size: 2.25rem; font-weight: 700; color: #0db075">
-            Receipt
-          </h1>
-        </div>
-        <div></div>
-      </div>
+    <table style="width: 100%; background-color: #EEF9F5; border-collapse: collapse; border: none;">
+      <tr>
+          <td style="width: 22%; text-align: center; background-color: #0DB075; padding: 0.25rem 2.5rem;">
+              <img style="width: 40px; height: 38px;" src="assets/images/icons/logo_amaas.png" alt="logo">
+              <p style="color: #FFFF; font-size: 1rem; font-weight: 600;">Amaas Seed</p>
+          </td>
+          <td style="width: 40%; text-align: center;">
+              <h1 style="font-size: 2.25rem; font-weight: 700; color: #0DB075;">Receipt</h1>
+          </td>
+          <td style="width: 30%;"></td>
+      </tr>
+  </table>
 
       <div class="payment_date_amount">
         <table>
           <thead
-            style="background-color: rgba(13, 176, 117, 0.11); padding: 10px"
+            style="background-color: rgba(13, 176, 117, 0.11); padding: 10px;border-radius: 5px;"
           >
-            <tr style="background: rgba(13, 176, 117, 0.11)">
-              <th style="padding: 10px; color: #0DB075; font-weight: 500;">Payment Date</th>
-              <th style="padding: 10px; color: #0DB075; font-weight: 500;">Payment Amount</th>
+            <tr style="background: rgba(13, 176, 117, 0.11); border-radius: 5px;">
+              <th style="padding: 10px; color: #0DB075; font-weight: 500; border: 1px solid rgba(217, 217, 217, 0.59);">Payment Date</th>
+              <th style="padding: 10px; color: #0DB075; font-weight: 500; border: 1px solid rgba(217, 217, 217, 0.59);">Payment Amount</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody> 
             <tr>
               <td>06/12/2023</td>
               <td>৳ 5000</td>
@@ -125,187 +102,100 @@
           </tbody>
         </table>
       </div>
-      <div style="display: flex; flex-direction: column;">
+      <div>
+        <div class="invoice_id" style="margin-bottom: 20px;">
+            <table style="border-radius: 5px; border: 1px solid rgba(217, 217, 217, 0.59); width: 650px; margin-top: 20px;">
+                <tr>
+                    <th colspan="2" style="font-size: 14px; color: #3a3a3a; font-weight: 500 ; text-align: left; border-radius: 5px 5px 0px 0px;
+                    background: #FBFBFB;">
+                        Invoice Id #12345566 &nbsp; &nbsp;
+                        <span style="font-size: 14px; color: #3a3a3a; font-weight: 500">Date: 30-06-2024</span>
+                    </th>
+                </tr>
+                <tr style="border-top: 1px solid rgba(217, 217, 217, 0.59); ">
+                    <td style="text-align: left;">Total Amount</td>
+                    <td style="text-align: right;">৳ 5000</td>
+                </tr>
+                <tr style="border-top: 1px solid rgba(217, 217, 217, 0.59);">
+                    <td style="text-align: left;">Discount</td>
+                    <td style="text-align: right;">৳ 500</td>
+                </tr>
+                <tr style="border-top: 1px solid rgba(217, 217, 217, 0.59);">
+                    <td style="text-align: left;">Delivery Charge</td>
+                    <td style="text-align: right;">৳ 4500</td>
+                </tr>
+                <tr style="border-top: 1px solid rgba(217, 217, 217, 0.59);">
+                    <td style="text-align: left;">Paid Amount</td>
+                    <td style="text-align: right;">৳ 5000</td>
+                </tr>
+                <!-- Sales Discount Withdraw -->
+                <tr style="border-top: 1px solid rgba(217, 217, 217, 0.59);">
+                    <td style="text-align: left;">Sales Discount Withdraw</td>
+                    <td style="text-align: right;">৳ 500</td>
+                </tr>
+                <!-- Due Amount -->
+                <tr style="border-top: 1px solid rgba(217, 217, 217, 0.59);">
+                    <td style="text-align: left;">Due Amount</td>
+                    <td style="text-align: right;">৳ 0</td>
+                </tr>
+            </table>
+        </div>
         <div class="invoice_id">
-            <div
-              style="
-                border-radius: 5px;
-                border: 1px solid rgba(217, 217, 217, 0.59);
-                width: 650px;
-                margin-top: 20px;
-              "
-            >
-              <div>
-                <h1 style="font-size: 14px; color: #3a3a3a; font-weight: 500">
-                  Invoice Id #12345566 &nbsp; &nbsp;
-                  <span style="font-size: 14px; color: #3a3a3a; font-weight: 500"
-                    >Date: 30-06-2024</span
-                  >
-                </h1>
-              </div>
-              <div
-                style="
-                  display: flex;
-                  justify-content: space-between;
-                  border-top: 1px solid rgba(217, 217, 217, 0.59);
-                "
-              >
-                <p>Total Amount</p>
-                <p>৳ 5000</p>
-              </div>
-              <div
-                style="
-                  display: flex;
-                  justify-content: space-between;
-                  border-top: 1px solid rgba(217, 217, 217, 0.59);
-                "
-              >
-                <p>Discount</p>
-                <p>৳ 500</p>
-              </div>
-              <div
-                style="
-                  display: flex;
-                  justify-content: space-between;
-                  border-top: 1px solid rgba(217, 217, 217, 0.59);
-                "
-              >
-                <p>Delivery Charge</p>
-                <p>৳ 4500</p>
-              </div>
-                <div
-                    style="
-                    display: flex;
-                    justify-content: space-between;
-                    border-top: 1px solid rgba(217, 217, 217, 0.59);
-                    " >
-                    <p>Paid Amount</p>
-                    <p>৳ 5000</p>
-                </div>
+            <table style="border-radius: 5px; border: 1px solid rgba(217, 217, 217, 0.59); width: 650px; margin-top: 20px;">
+                <tr>
+                    <th colspan="2" style="font-size: 14px; color: #3a3a3a; font-weight: 500 ; text-align: left; border-radius: 5px 5px 0px 0px;
+                    background: #FBFBFB;">
+                        Invoice Id #12345566 &nbsp; &nbsp;
+                        <span style="font-size: 14px; color: #3a3a3a; font-weight: 500">Date: 30-06-2024</span>
+                    </th>
+                </tr>
+                <tr style="border-top: 1px solid rgba(217, 217, 217, 0.59); ">
+                    <td style="text-align: left;">Total Amount</td>
+                    <td style="text-align: right;">৳ 5000</td>
+                </tr>
+                <tr style="border-top: 1px solid rgba(217, 217, 217, 0.59);">
+                    <td style="text-align: left;">Discount</td>
+                    <td style="text-align: right;">৳ 500</td>
+                </tr>
+                <tr style="border-top: 1px solid rgba(217, 217, 217, 0.59);">
+                    <td style="text-align: left;">Delivery Charge</td>
+                    <td style="text-align: right;">৳ 4500</td>
+                </tr>
+                <tr style="border-top: 1px solid rgba(217, 217, 217, 0.59);">
+                    <td style="text-align: left;">Paid Amount</td>
+                    <td style="text-align: right;">৳ 5000</td>
+                </tr>
                 <!-- Sales Discount Withdraw -->
-                <div
-                    style="
-                    display: flex;
-                    justify-content: space-between;
-                    border-top: 1px solid rgba(217, 217, 217, 0.59);
-                    " >
-                    <p style="display:flex; align-items: center; justify-content: center;">Sales Discount Withdraw <span> &nbsp;
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                        <path d="M7 0C3.136 0 0 3.136 0 7C0 10.864 3.136 14 7 14C10.864 14 14 10.864 14 7C14 3.136 10.864 0 7 0ZM7.7 10.5H6.3V6.3H7.7V10.5ZM7.7 4.9H6.3V3.5H7.7V4.9Z" fill="#F25C4C"/>
-                        </svg></span></p>
-                    <p>৳ 500</p>
-                </div>
+                <tr style="border-top: 1px solid rgba(217, 217, 217, 0.59);">
+                    <td style="text-align: left;">Sales Discount Withdraw</td>
+                    <td style="text-align: right;">৳ 500</td>
+                </tr>
                 <!-- Due Amount -->
-                <div
-                    style="
-                    display: flex;
-                    justify-content: space-between;
-                    border-top: 1px solid rgba(217, 217, 217, 0.59);
-                    " >
-                    <p>Due Amount</p>
-                    <p>৳ 0</p>
-                </div>
-            </div>
-          </div>
-          <div class="invoice_id ">
-            <div
-              style="
-                border-radius: 5px;
-                border: 1px solid rgba(217, 217, 217, 0.59);
-                width: 650px;
-                margin-top: 20px;
-              "
-            >
-              <div>
-                <h1 style="font-size: 14px; color: #3a3a3a; font-weight: 500">
-                  Invoice Id #12345566 &nbsp; &nbsp;
-                  <span style="font-size: 14px; color: #3a3a3a; font-weight: 500"
-                    >Date: 30-06-2024</span
-                  >
-                </h1>
-              </div>
-              <div
-                style="
-                  display: flex;
-                  justify-content: space-between;
-                  border-top: 1px solid rgba(217, 217, 217, 0.59);
-                "
-              >
-                <p>Total Amount</p>
-                <p>৳ 5000</p>
-              </div>
-              <div
-                style="
-                  display: flex;
-                  justify-content: space-between;
-                  border-top: 1px solid rgba(217, 217, 217, 0.59);
-                "
-              >
-                <p>Discount</p>
-                <p>৳ 500</p>
-              </div>
-              <div
-                style="
-                  display: flex;
-                  justify-content: space-between;
-                  border-top: 1px solid rgba(217, 217, 217, 0.59);
-                "
-              >
-                <p>Delivery Charge</p>
-                <p>৳ 4500</p>
-              </div>
-                <div
-                    style="
-                    display: flex;
-                    justify-content: space-between;
-                    border-top: 1px solid rgba(217, 217, 217, 0.59);
-                    " >
-                    <p>Paid Amount</p>
-                    <p>৳ 5000</p>
-                </div>
-                <!-- Sales Discount Withdraw -->
-                <div
-                    style="
-                    display: flex;
-                    justify-content: space-between;
-                    border-top: 1px solid rgba(217, 217, 217, 0.59);
-                    " >
-                    <p style="display:flex; align-items: center; justify-content: center;">Sales Discount Withdraw <span> &nbsp;
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                        <path d="M7 0C3.136 0 0 3.136 0 7C0 10.864 3.136 14 7 14C10.864 14 14 10.864 14 7C14 3.136 10.864 0 7 0ZM7.7 10.5H6.3V6.3H7.7V10.5ZM7.7 4.9H6.3V3.5H7.7V4.9Z" fill="#F25C4C"/>
-                        </svg></span></p>
-                    <p>৳ 500</p>
-                </div>
-                <!-- Due Amount -->
-                <div
-                    style="
-                    display: flex;
-                    justify-content: space-between;
-                    border-top: 1px solid rgba(217, 217, 217, 0.59);
-                    " >
-                    <p>Due Amount</p>
-                    <p>৳ 0</p>
-                </div>
-            </div>
-          </div>
+                <tr style="border-top: 1px solid rgba(217, 217, 217, 0.59);">
+                    <td style="text-align: left;">Due Amount</td>
+                    <td style="text-align: right;">৳ 0</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="payment_amount_total">
+      <div class="payment_content">
+          <table style="width: 100%;">
+              <tr>
+                  <td style="text-align: left;">Total Payable</td>
+                  <td style="text-align: right;">৳ 5000</td>
+              </tr>
+              <tr>
+                  <td style="text-align: left;">Paying</td>
+                  <td style="text-align: right; color: #0DB075;">৳ 5000</td>
+              </tr>
+              <tr>
+                  <td style="text-align: left;">Remaining</td>
+                  <td style="text-align: right; color:#F25C4C;">৳ 0</td>
+              </tr>
+          </table>
       </div>
-      <div class="payment_amount_total">
-          <div class="payment_content">
-            <div style="display: flex; justify-content: space-between;">
-                <p>Total Payable</p>
-                <p>৳ 5000</p>
-            </div>
-            <div style="display: flex; justify-content: space-between;">
-                <p>Paying</p>
-                <p>৳ 5000</p>
-            </div>
-            <div style="display: flex; justify-content: space-between;">
-                <p>Remaining</p>
-                <p>৳ 0</p>
-            </div>
-
-           </div>
-      </div>
+  </div>
       
 
       <!-- <div style="margin-top: 2.5rem; text-align: center;">
