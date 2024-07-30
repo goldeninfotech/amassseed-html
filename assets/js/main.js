@@ -231,11 +231,19 @@ $(document).ready(function(){
         $("#searchContainer").toggle();
         $("#searchInput").focus(); // Focus on the input field when it appears
         $("#close-toggle").toggle(); // Toggle close button along with content
+        $(".menu_itmes").hide(); 
+        $("#searchButton").hide(); // Hide the search button itself
+
+        
     });
 
     $("#close-toggle").click(function(){
         $("#searchContainer").toggle();
         $("#close-toggle").toggle(); // Hide the close button itself
+        $(".menu_itmes").show(); // Show menu items
+        $("#searchButton").show(); // Show the search button itself
+
+
     });
 });
 
