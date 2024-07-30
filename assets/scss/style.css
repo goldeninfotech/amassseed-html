@@ -3,6 +3,8 @@
 /*
 !Utilities Or Helper CSS
 */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Shadows+Into+Light+Two&display=swap");
 *,
 ::before,
 ::after {
@@ -25,7 +27,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Inter", sans-serif;
+  font-family: "Manrope";
   color: #333;
 }
 
@@ -33,6 +35,7 @@ p {
   font-weight: 400;
   font-size: 16px;
   line-height: 27px;
+  font-family: "Manrope";
   color: #333;
 }
 @media (max-width: 700px) {
@@ -71,6 +74,7 @@ svg {
 a {
   color: unset;
   text-decoration: none;
+  font-family: "Manrope";
 }
 a:hover {
   text-decoration: none;
@@ -88,6 +92,7 @@ ul {
 
 li {
   list-style: none;
+  font-family: "Manrope", sans-serif;
 }
 
 :focus {
@@ -100,6 +105,7 @@ textarea {
   font-weight: 400;
   font-size: 16px;
   color: #101010;
+  font-family: "Manrope", sans-serif;
 }
 
 input:focus,
@@ -127,6 +133,7 @@ button {
   cursor: pointer;
   border: none !important;
   background-color: transparent;
+  font-family: "Manrope", sans-serif;
 }
 
 button:hover {
@@ -221,6 +228,10 @@ input[type=number] {
   background: none !important;
 }
 
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #1DAB7E !important;
+}
+
 .home_videos_slider {
   position: relative;
 }
@@ -311,6 +322,10 @@ input[type=number] {
 }
 .news_slider .additional_products_slider .owl-theme .owl-nav :hover {
   background: none !important;
+}
+
+.our_clint_slider .owl-theme .owl-dots .owl-dot {
+  margin-top: 30px !important;
 }
 
 .additional_products_slider {
@@ -572,7 +587,7 @@ input[type=number] {
   display: inline-block;
   position: absolute;
   top: 50%;
-  right: -50%;
+  right: -68%;
   transform: translate(-50%, -50%);
 }
 
@@ -638,4 +653,8 @@ input[type=number] {
 
 .wave-3 {
   animation-delay: 2s;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #1DAB7E !important;
 }/*# sourceMappingURL=style.css.map */
